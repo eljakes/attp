@@ -1,6 +1,28 @@
+//Pages
+import Home from './pages/Home';
+import Login from './pages/Login';
+import Signup from "./pages/Signup";
+
+//styled components
+import {StyledContainer} from './components/Styles';
+
+
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom';
+
 function App() {
   return (
-    <h1>Hello from App</h1>
+    <Router>
+        <StyledContainer>
+          <Signup />
+        </StyledContainer>
+    </Router>
+
+
   );
 }
 
